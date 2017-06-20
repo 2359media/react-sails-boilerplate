@@ -1,0 +1,13 @@
+{
+    "preset": "airbnb",
+    "requireSpaceAfterKeywords": [
+        "switch",
+        "case",
+        "return",
+        "typeof"
+    ],
+    "validateIndentation": 4,
+    "requireSpaceBeforeBlockStatements": null,
+    "disallowMultipleVarDecl": null,
+    "requireTrailingComma": null
+}
