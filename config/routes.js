@@ -20,7 +20,7 @@
  * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
  */
 
-module.exports.routes = {
+var routes = {
 
   /***************************************************************************
   *                                                                          *
@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+    '/homepage': {
+        view: 'homepage'
+    }
 
   /***************************************************************************
   *                                                                          *
@@ -47,3 +47,16 @@ module.exports.routes = {
   ***************************************************************************/
 
 };
+
+var webAppRoutes = [
+    '/',
+    '/second',
+    'page1'
+]
+
+webAppRoutes.forEach(function(r) {
+    routes['GET ' + r] = 'WebAppController.index'
+})
+
+
+module.exports.routes = routes;
