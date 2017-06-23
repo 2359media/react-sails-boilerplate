@@ -1,6 +1,10 @@
 import * as types from '../constants/actionTypes'
 
 export const changeColor = () => ({
-    type: types.Change_Color,
+    type: types.CHANGE_COLOR,
     color: 'red'
+})
+
+export const test = () => ({
+    type: types.TEST
 })

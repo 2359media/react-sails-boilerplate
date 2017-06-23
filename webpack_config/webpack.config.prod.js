@@ -5,7 +5,7 @@ const path = require('path');
 // paths
 const root = path.resolve(__dirname, '..');
 const buildPath = path.resolve(root, 'assets/js');
-const srcPath = path.resolve(root, 'src');
+const srcPath = path.resolve(root, 'app');
 // const publicPath = path.resolve(root, 'assets');
 // const htmlPath = `${srcPath}/index.html`;
 const indexPath = `${srcPath}/index.js`;

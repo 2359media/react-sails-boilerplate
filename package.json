@@ -31,6 +31,7 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "handlebars": "^4.0.10",
+    "history": "^4.6.3",
     "html-loader": "^0.4.5",
     "include-all": "^1.0.0",
     "node-sass": "^4.5.3",
@@ -44,6 +45,7 @@
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.7.0",
     "redux-thunk": "^2.2.0",
+    "redux-devtools-extension": "^2.13.2",
     "sails": "~0.12.13",
     "sails-disk": "~0.10.9",
     "sass-loader": "^6.0.6",
@@ -81,7 +83,6 @@
     "eslint-plugin-react": "^7.0.1",
     "html-webpack-plugin": "^2.28.0",
     "react-addons-test-utils": "^15.4.2",
-    "redux-devtools-extension": "^2.13.2",
     "webpack-dev-server": "^2.4.2"
   },
   "bugs": {

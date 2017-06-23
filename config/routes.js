@@ -55,7 +55,7 @@ var webAppRoutes = [
 ]
 
 webAppRoutes.forEach(function(r) {
-    routes['GET ' + r] = 'WebAppController.index'
+    routes['GET ' + r] = 'appController.index'
 })
 
 

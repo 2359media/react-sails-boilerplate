@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 
-import actions from '../actions/index.js'
+import actions from '../actions/index'
 
 import Header from '../components/Header.jsx'
 
 require('../scss/main.scss')
 
 export class HomeView extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const { color, linkToAnotherPage, changeColor } = this.props;
@@ -31,13 +27,13 @@ export class HomeView extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
     color: state.color
 })
 
-const mapDispatchToProps = (dispatch) => ({
-    linkToAnotherPage: () => dispatch( push('/second' ) ),
-    changeColor: () => dispatch( actions.changeColor() )
+const mapDispatchToProps = dispatch => ({
+    linkToAnotherPage: () => dispatch(push('/second')),
+    changeColor: () => dispatch(actions.changeColor())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeView)

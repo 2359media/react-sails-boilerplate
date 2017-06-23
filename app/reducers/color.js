@@ -1,14 +1,16 @@
-import { Change_Color } from '../constants/actionTypes.js'
+import { CHANGE_COLOR } from '../constants/actionTypes'
 
-export const color = (
+const color = (
     state = '',
     action
 ) => {
     switch (action.type) {
-        case Change_Color: {
+        case CHANGE_COLOR: {
             return action.color
         }
         default:
             return state
     }
 }
+
+export default color
